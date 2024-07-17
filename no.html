@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle's Website</title>
+    <style>
+        * {
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: grey;
+            color: white;
+        }
+        button {
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 30px;
+            border: 2px solid darkgreen;
+            width: 150px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 4px black;
+            align-items: center;
+        }
+        .back {
+            background-color: darkgreen;
+            margin-right: 150px;
+            align-items: center;
+            display: flex;
+        }
+        .gif_container {
+            text-align: center;
+            width: 70%
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Excuse me, hit the back button and try again.</h1>
+            <h1 class = "header_text">Thanks!</h1>
+            </div>
+                <div class="gif_container">
+                    <img src="tryagain.jpg" alt="" width="625px" height="300px"
+                    <div class="buttons">
+                        <button class="back-btn" id="backButton" onclick="nextPage()">Back</button>
+                        <script>
+                            function nextPage() {
+                                window.location.href = "popquestion.html";
+                            }
+                        </script>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

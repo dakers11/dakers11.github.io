@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle's Website</title>
+    <style>
+        * {
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: grey;
+            color: white;
+            align-items: center;
+            justify-content: center;
+
+        }
+        button {
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 30px;
+            border: 2px solid darkgreen;
+            width: 150px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 4px black;
+            align-items: center;
+
+        }
+
+        .yes {
+            background-color: darkgreen;
+            margin-right: 150px;
+            align-items: center;
+            display: flex;
+            
+        }
+
+        .yes:hover {
+            background-color: darkgray;
+        }
+
+        .no {
+            background-color: crimson;
+            margin-left: 150px;
+            align-items: center;
+            display: flex;
+        }
+
+        .no:hover {
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will you be my girlfriend? <3</h1>
+    <p>hopefully you say yes or this would be awkward...</p>
+    <img src="please.gif" alt="" width="700px" height="300px"
+    <div class="buttons">
+        <button class="yes-btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button class="no-btn" id="noButton" onclick="moveButton()">No</button>
+        <script>
+            function nextPage() {
+                window.location.href = "yes.html";
+            }
+            function moveButton() {
+                window.location.href = "no.html";
+            }
+        </script>
+    </div>
+</body>
